@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -70,11 +70,10 @@ public class MainManager : MonoBehaviour
         {
             ScoreManager.Instance.bestName = ScoreManager.Instance.currentName;
             ScoreManager.Instance.bestScore = ScoreManager.Instance.currentScore;
-
-            BestScoreText.text = $"Best Score : " +
-                $"{ScoreManager.Instance.bestName} : " +
-                $"{ScoreManager.Instance.bestScore}";
         }
+        BestScoreText.text = $"Best Score : " + 
+            $"{ScoreManager.Instance.bestName} : " + 
+            $"{ScoreManager.Instance.bestScore}";
     }
 
     void AddPoint(int point)
